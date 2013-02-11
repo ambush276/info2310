@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>This RSpec file should live at `spec/models/micro_post_spec.rb`.
+
+Your first assignment is to create the new MicroPost model, and to write the validations to make this spec pass.</title>
+
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="ocFbkH0Ggjznp0VDKnaAghU6NgF0dcpDD2CEGQJsprM=" name="csrf-token" />
+  <meta name="viewport" content="width=960">
+
+  <link type="text/plain" rel="author" href="http://github.com/humans.txt" />
+
+  <link href="https://gist.github.com/assets/application-ca7ad876ab00d2012536bca5120ad99f.css" media="screen, print" rel="stylesheet" />
+  <script src="https://gist.github.com/assets/application-999085a9c2f6d9c8313ae0051a6f6d76.js"></script>
+
+    <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@github">
+  <meta property="og:title" content="goggin13/micro_post_spec.rb">
+  <meta property="og:type" content="githubog:gist">
+  <meta property="og:url" content="https://gist.github.com/goggin13/4717890">
+  <meta property="og:image" content="https://secure.gravatar.com/avatar/8ba86ec43790f7c15bc8e053e0d4f2ea?s=140&amp;d=https://github.com/images/gravatars/gravatar-140.png">
+  <meta property="og:site_name" content="GitHub Gists">
+  <meta property="og:description" content="This RSpec file should live at `spec/models/micro_post_spec.rb`.
+
+Your first assignment is to create the new MicroPost model, and to write the validations to make this spec pass. - Gist is a simple way to share snippets of text and code with others.">
+  <meta name="description" content="This RSpec file should live at `spec/models/micro_post_spec.rb`.
+
+Your first assignment is to create the new MicroPost model, and to write the validations to make this spec pass. - Gist is a simple way to share snippets of text and code with others.">
+
+</head>
+
+<body class="">
+
+  <div id="wrapper">
+    
+
+    <div id="header" class="header header-logged-out">
+      <div class="container" class="clearfix">
+        <a class="header-logo-wordmark" href="https://gist.github.com/">
+          <img alt="GitHub:Gist" class="github-logo-4x" height="30" src="https://gist.github.com/assets/modules/header/logo@4x-d1f04d805ee6b4e58ccbdd0652f915f5.png">
+          <img alt="GitHub:Gist" class="github-logo-4x-hover" height="30" src="https://gist.github.com/assets/modules/header/logo@4x-hover-3d1e646ccb5193547b942350f87b068a.png">
+        </a>
+
+        <div class="header-actions">
+          <a class="button primary classy" href="https://github.com/signup?return_to=gist">Sign up for a GitHub Account</a>
+          <a class="button classy" href="/login?return_to=/goggin13/4717890" data-skip-pjax>Sign in</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-content" id="js-pjax-container" data-pjax-container>
+      <div class=" site-container js-site-container" data-url="/goggin13/4717890">
+  
+  <div class="pagehead repohead">
+  <div class="container">
+    <div class="title-actions-bar">
+      <ul class="pagehead-actions">
+        
+        <li>
+      </ul>
+      <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+        <span class="repo-label"><span>public</span></span>
+        <span class="mega-icon mega-icon-gist" ></span>
+        <div class="meta">
+          <div class="gist-author">
+            <img src="https://secure.gravatar.com/avatar/8ba86ec43790f7c15bc8e053e0d4f2ea?s=140&amp;d=https://github.com/images/gravatars/gravatar-140.png" width="26" height="26">
+            <span class="author vcard">
+                <span itemprop="title"><a href="/goggin13">goggin13</a></span>
+            </span> /
+            <strong><a href="/goggin13/4717890" class="js-current-repository">micro_post_spec.rb</a></strong>
+          </div>
+          <div class="gist-timestamp">
+              <span class="datetime">Created <time class="js-relative-date" title="2013-02-05T21:32:38Z" datetime="2013-02-05T21:32:38Z">2013-02-05</time></span>
+          </div>
+      </h1>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="gist-description container">
+  <p>This RSpec file should live at `spec/models/micro_post_spec.rb`.
+
+Your first assignment is to create the new MicroPost model, and to write the validations to make this spec pass.</p>
+</div>
+
+<div class="gist container">
+    <div class="root-pane">
+  <div class="menu-container">
+    <ul class="menu gisttabs">
+      <li>
+        <a href="/goggin13/4717890" class="selected">
+          Gist Detail
+        </a>
+      </li>
+
+        <li>
+          <a href="/goggin13/4717890/revisions" >
+            Revisions
+            <span class="counter">2</span>
+          </a>
+        </li>
+
+
+    </ul>
+  </div>
+
+  <ul class="export-references">
+    <li>
+      <a href="/goggin13/4717890/download" class="minibutton" rel="nofollow"><span class="mini-icon mini-icon-download"></span>Download Gist</a>
+    </li>
+    <li>
+      <label for="url-field"><strong>Clone</strong> this gist</label>
+      <input type="text" readonly spellcheck="false" class="url-field js-url-field" name="url-field" value="https://gist.github.com/4717890.git">
+    </li>
+    <li>
+      <label for="embed-field"><strong>Embed</strong> this gist</label>
+      <input type="text" readonly spellcheck="false" class="url-field js-url-field" name="embed-field" value="&lt;script src=&quot;https://gist.github.com/goggin13/4717890.js&quot;&gt;&lt;/script&gt;">
+    </li>
+    <li>
+      <label for="link-field"><strong>Link to</strong> this gist</label>
+      <input type="text" readonly spellcheck="false" class="url-field js-url-field" name="link-field" value="https://gist.github.com/goggin13/4717890">
+    </li>
+  </ul>
+</div>
+
+
+  <div class="column files">
+        <div id="file-micro_post_spec-rb" class="bubble">
+          <div class="file-box ">
+            <div class="meta">
+              <div class="file-info">
+                <span class="file-type-icon"><span class="mini-icon mini-icon-gist"></span></span>
+                <strong class="file-name js-selectable-text">micro_post_spec.rb</strong>
+              </div>
+              <div class="file-actions">
+                <span class="file-language">Ruby</span>
+                <ul class="button-group">
+                  <li><a title="Permalink" href="#file-micro_post_spec-rb" class="file-actions-button tooltipped downwards permalink"><span class="mini-icon mini-icon-link"></span></a></li>
+                  <li><a title="View Raw" href="/goggin13/4717890/raw/b468c3437be82821eecc72475d388e2aea2df3d1/micro_post_spec.rb" data-skip-pjax class="file-actions-button tooltipped downwards raw-url"><span class="mini-icon mini-icon-code"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="suppressed">
+              <a class="js-show-suppressed-file">File suppressed. Click to show.</a>
+            </div>
+            
+
+
+  <div class="file-data">
+    <table cellpadding="0" cellspacing="0" class="lines highlight">
+      <tr>
+        <td class="line-numbers">
+          <span class="line-number" id="file-micro_post_spec-rb-L1" rel="file-micro_post_spec-rb-L1">1</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L2" rel="file-micro_post_spec-rb-L2">2</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L3" rel="file-micro_post_spec-rb-L3">3</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L4" rel="file-micro_post_spec-rb-L4">4</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L5" rel="file-micro_post_spec-rb-L5">5</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L6" rel="file-micro_post_spec-rb-L6">6</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L7" rel="file-micro_post_spec-rb-L7">7</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L8" rel="file-micro_post_spec-rb-L8">8</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L9" rel="file-micro_post_spec-rb-L9">9</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L10" rel="file-micro_post_spec-rb-L10">10</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L11" rel="file-micro_post_spec-rb-L11">11</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L12" rel="file-micro_post_spec-rb-L12">12</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L13" rel="file-micro_post_spec-rb-L13">13</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L14" rel="file-micro_post_spec-rb-L14">14</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L15" rel="file-micro_post_spec-rb-L15">15</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L16" rel="file-micro_post_spec-rb-L16">16</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L17" rel="file-micro_post_spec-rb-L17">17</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L18" rel="file-micro_post_spec-rb-L18">18</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L19" rel="file-micro_post_spec-rb-L19">19</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L20" rel="file-micro_post_spec-rb-L20">20</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L21" rel="file-micro_post_spec-rb-L21">21</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L22" rel="file-micro_post_spec-rb-L22">22</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L23" rel="file-micro_post_spec-rb-L23">23</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L24" rel="file-micro_post_spec-rb-L24">24</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L25" rel="file-micro_post_spec-rb-L25">25</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L26" rel="file-micro_post_spec-rb-L26">26</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L27" rel="file-micro_post_spec-rb-L27">27</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L28" rel="file-micro_post_spec-rb-L28">28</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L29" rel="file-micro_post_spec-rb-L29">29</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L30" rel="file-micro_post_spec-rb-L30">30</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L31" rel="file-micro_post_spec-rb-L31">31</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L32" rel="file-micro_post_spec-rb-L32">32</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L33" rel="file-micro_post_spec-rb-L33">33</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L34" rel="file-micro_post_spec-rb-L34">34</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L35" rel="file-micro_post_spec-rb-L35">35</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L36" rel="file-micro_post_spec-rb-L36">36</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L37" rel="file-micro_post_spec-rb-L37">37</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L38" rel="file-micro_post_spec-rb-L38">38</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L39" rel="file-micro_post_spec-rb-L39">39</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L40" rel="file-micro_post_spec-rb-L40">40</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L41" rel="file-micro_post_spec-rb-L41">41</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L42" rel="file-micro_post_spec-rb-L42">42</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L43" rel="file-micro_post_spec-rb-L43">43</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L44" rel="file-micro_post_spec-rb-L44">44</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L45" rel="file-micro_post_spec-rb-L45">45</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L46" rel="file-micro_post_spec-rb-L46">46</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L47" rel="file-micro_post_spec-rb-L47">47</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L48" rel="file-micro_post_spec-rb-L48">48</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L49" rel="file-micro_post_spec-rb-L49">49</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L50" rel="file-micro_post_spec-rb-L50">50</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L51" rel="file-micro_post_spec-rb-L51">51</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L52" rel="file-micro_post_spec-rb-L52">52</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L53" rel="file-micro_post_spec-rb-L53">53</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L54" rel="file-micro_post_spec-rb-L54">54</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L55" rel="file-micro_post_spec-rb-L55">55</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L56" rel="file-micro_post_spec-rb-L56">56</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L57" rel="file-micro_post_spec-rb-L57">57</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L58" rel="file-micro_post_spec-rb-L58">58</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L59" rel="file-micro_post_spec-rb-L59">59</span>
+          <span class="line-number" id="file-micro_post_spec-rb-L60" rel="file-micro_post_spec-rb-L60">60</span>
+        </td>
+        <td class="line-data">
+          <pre class="line-pre"><div class="line" id="file-micro_post_spec-rb-LC1"><span class="nb">require</span> <span class="s1">&#39;spec_helper&#39;</span></div><div class="line" id="file-micro_post_spec-rb-LC2">&nbsp;</div><div class="line" id="file-micro_post_spec-rb-LC3"><span class="n">describe</span> <span class="no">MicroPost</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC4">&nbsp;</div><div class="line" id="file-micro_post_spec-rb-LC5">  <span class="n">before</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC6">    <span class="vi">@micro_post</span> <span class="o">=</span> <span class="no">MicroPost</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> </div><div class="line" id="file-micro_post_spec-rb-LC7">                                <span class="ss">content</span><span class="p">:</span> <span class="s2">&quot;hello world&quot;</span><span class="p">)</span></div><div class="line" id="file-micro_post_spec-rb-LC8">  <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC9">&nbsp;</div><div class="line" id="file-micro_post_spec-rb-LC10">  <span class="n">describe</span> <span class="s2">&quot;with valid attributes&quot;</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC11">    </div><div class="line" id="file-micro_post_spec-rb-LC12">    <span class="n">it</span> <span class="s2">&quot;should be valid&quot;</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC13">      <span class="vi">@micro_post</span><span class="o">.</span><span class="n">should</span> <span class="n">be_valid</span></div><div class="line" id="file-micro_post_spec-rb-LC14">    <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC15">  <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC16">  </div><div class="line" id="file-micro_post_spec-rb-LC17">  <span class="n">describe</span> <span class="s2">&quot;without a user_id&quot;</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC18">    </div><div class="line" id="file-micro_post_spec-rb-LC19">    <span class="n">before</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC20">      <span class="vi">@micro_post</span><span class="o">.</span><span class="n">user_id</span> <span class="o">=</span> <span class="kp">nil</span></div><div class="line" id="file-micro_post_spec-rb-LC21">    <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC22">    </div><div class="line" id="file-micro_post_spec-rb-LC23">    <span class="n">it</span> <span class="s2">&quot;should not be valid&quot;</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC24">      <span class="vi">@micro_post</span><span class="o">.</span><span class="n">should_not</span> <span class="n">be_valid</span></div><div class="line" id="file-micro_post_spec-rb-LC25">    <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC26">  <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC27">  </div><div class="line" id="file-micro_post_spec-rb-LC28">  <span class="n">describe</span> <span class="s2">&quot;without any content&quot;</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC29">    </div><div class="line" id="file-micro_post_spec-rb-LC30">    <span class="n">before</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC31">      <span class="vi">@micro_post</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span></div><div class="line" id="file-micro_post_spec-rb-LC32">    <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC33">  </div><div class="line" id="file-micro_post_spec-rb-LC34">    <span class="n">it</span> <span class="s2">&quot;should not be valid&quot;</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC35">      <span class="vi">@micro_post</span><span class="o">.</span><span class="n">should_not</span> <span class="n">be_valid</span></div><div class="line" id="file-micro_post_spec-rb-LC36">    <span class="k">end</span>    </div><div class="line" id="file-micro_post_spec-rb-LC37">  <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC38">  </div><div class="line" id="file-micro_post_spec-rb-LC39">  <span class="n">describe</span> <span class="s2">&quot;with too short content&quot;</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC40">    </div><div class="line" id="file-micro_post_spec-rb-LC41">    <span class="n">before</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC42">      <span class="vi">@micro_post</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="s2">&quot;hi&quot;</span></div><div class="line" id="file-micro_post_spec-rb-LC43">    <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC44">  </div><div class="line" id="file-micro_post_spec-rb-LC45">    <span class="n">it</span> <span class="s2">&quot;should not be valid&quot;</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC46">      <span class="vi">@micro_post</span><span class="o">.</span><span class="n">should_not</span> <span class="n">be_valid</span></div><div class="line" id="file-micro_post_spec-rb-LC47">    <span class="k">end</span>    </div><div class="line" id="file-micro_post_spec-rb-LC48">  <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC49">  </div><div class="line" id="file-micro_post_spec-rb-LC50">  <span class="n">describe</span> <span class="s2">&quot;with too long content&quot;</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC51">    </div><div class="line" id="file-micro_post_spec-rb-LC52">    <span class="n">before</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC53">      <span class="vi">@micro_post</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span> <span class="o">*</span> <span class="mi">141</span></div><div class="line" id="file-micro_post_spec-rb-LC54">    <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC55">  </div><div class="line" id="file-micro_post_spec-rb-LC56">    <span class="n">it</span> <span class="s2">&quot;should not be valid&quot;</span> <span class="k">do</span></div><div class="line" id="file-micro_post_spec-rb-LC57">      <span class="vi">@micro_post</span><span class="o">.</span><span class="n">should_not</span> <span class="n">be_valid</span></div><div class="line" id="file-micro_post_spec-rb-LC58">    <span class="k">end</span>    </div><div class="line" id="file-micro_post_spec-rb-LC59">  <span class="k">end</span></div><div class="line" id="file-micro_post_spec-rb-LC60"><span class="k">end</span></div></pre>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+          </div>
+        </div>
+    <div id="comments" class="new-comments">
+      
+    </div>
+      <p class="uncommentable"><span class="mini-icon mini-icon-exclamation"></span> Please <a href="/login?return_to=/goggin13/4717890" rel="nofollow">sign in</a> to comment on this gist.</p>
+  </div>
+</div>
+
+  <div class="context-overlay"></div>
+</div>
+
+    </div>
+    <div class="slow-loading-overlay"></div>
+  </div>
+
+  <div id="ajax-error-message" class="flash flash-error">
+    <div class="container">
+      <span class="mini-icon mini-icon-exclamation"></span>
+      Something went wrong with that request. Please try again.
+      <a href="#" class="mini-icon mini-icon-remove-close ajax-error-dismiss"></a>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer">
+  <div class="container clearfix">
+
+    <p class="right">&copy; 2013 GitHub Inc. All rights reserved.</p>
+    <a class="left" href="/">
+      <span class="mega-icon mega-icon-invertocat"></span>
+    </a>
+    <ul id="legal">
+      <li><a href="http://github.com/blog">The GitHub Blog</a></li>
+      <li><a href="mailto:support@github.com">Support</a></li>
+      <li><a href="https://github.com/contact">Contact</a></li>
+    </ul>
+
+  </div><!-- /.container -->
+</div><!-- /.#footer -->
+
+  </footer>
+
+</body>
+</html>
