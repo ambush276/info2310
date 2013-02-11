@@ -10,7 +10,9 @@ Info2310::Application.routes.draw do
   get "static_pages/help"
 
   get "static_pages/about"
-  # The priority is based upon order of creation:
+  root :to => 'static_pages#home'
+  # The priority is based upon  
+# The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
