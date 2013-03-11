@@ -24,4 +24,8 @@ end
 def encrypt(raw_password)
     Digest::SHA256.hexdigest("--#{salt}--#{raw_password}--")
   end
+
+def feed(paginate_options={page: 1})
+  micro_posts.paginate(paginate_options)
+end
 end

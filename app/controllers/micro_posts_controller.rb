@@ -1,5 +1,6 @@
 class MicroPostsController < ApplicationController
-  # GET /micro_posts
+before_filter :redirect_unless_authorized, only: [:edit, :update, :destroy]  
+# GET /micro_posts
   # GET /micro_posts.json
   def index
     @micro_posts = MicroPost.all
@@ -40,15 +41,17 @@ class MicroPostsController < ApplicationController
   # POST /micro_posts
   # POST /micro_posts.json
   def create
-    @micro_post = MicroPost.new(params[:micro_post])
+    @micro_post = current_user.micro_posts.build(params[:micro_post])
 
     respond_to do |format|
       if @micro_post.save
         format.html { redirect_to @micro_post, notice: 'Micro post was successfully created.' }
         format.json { render json: @micro_post, status: :created, location: @micro_post }
-      else
+        format.js { render :partial => "micro_posts/show" }
+       else
         format.html { render action: "new" }
         format.json { render json: @micro_post.errors, status: :unprocessable_entity }
+	format.js { render :partial => "micro_posts/errors" }
       end
     end
   end
@@ -78,6 +81,15 @@ class MicroPostsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to micro_posts_url }
       format.json { head :no_content }
+      format.js {render partial: 'micro_posts/destroy'}
     end
   end
+private
+	def redirect_unless_authorized
+		@micropost = MicroPost.find(params[:id])
+		unless current_user == @micropost.user
+			flash[:error] = "You are not authorized to edit that MicroPost"
+			redirect_to root_path
+		end
+	end
 end
